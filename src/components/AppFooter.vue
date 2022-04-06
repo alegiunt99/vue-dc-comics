@@ -107,7 +107,39 @@
     <!-- Footer inferiore con i link per i social network -->
     <div id="bottom-footer">
       <div class="container">
+        <div class="subsribe-button">
+          <button>SIGN UP NOW</button>
+        </div>
 
+        <div class="social-networks">
+          <div class="follow-us">
+            <p>FOLLOW US</p>
+          </div>
+
+          <div class="social-icons">
+
+            <div class="social-button">
+              <img src="../assets/footer-facebook.png" alt="">
+            </div>
+            
+            <div class="social-button">
+              <img src="../assets/footer-twitter.png" alt="">
+            </div>
+            
+            <div class="social-button">
+              <img src="../assets/footer-youtube.png" alt="">
+            </div>
+
+            <div class="social-button">
+              <img src="../assets/footer-pinterest.png" alt="">
+            </div>
+
+            <div class="social-button">
+              <img src="../assets/footer-periscope.png" alt="">
+            </div>
+        
+          </div>
+        </div>
       </div>
     </div>
 
@@ -161,6 +193,8 @@ export default {
 
   }
 
+
+
   #links-footer{
     padding: 50px 0px;
     
@@ -194,4 +228,49 @@ export default {
       }
     }
   }
+
+
+
+  #bottom-footer{
+    padding: 25px 0px;
+    background-color: #303030;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .subsribe-button{
+        button{
+          background-color: transparent;
+          border: 1px solid #0282f9;
+          font-size: 14px;
+          padding: 10px;
+          color: white;
+          &:hover{
+            background-color: rgb(104, 104, 104);
+            cursor: pointer;
+          }
+        }
+      }
+      .social-networks{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        .follow-us{
+          p{
+            color: #1277eb;
+          }
+        }
+        .social-icons{
+          display: flex;
+          column-gap: 5px;
+          .social-button{
+            img{
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+  }
+
 </style>
