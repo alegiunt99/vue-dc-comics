@@ -16,6 +16,10 @@
 <script>
 export default {
   name: 'MainApp',
+
+  props: {
+    ComicsPhotos: Array,
+  }
   
 }
 </script>
