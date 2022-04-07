@@ -45,12 +45,12 @@ export default {
     align-items: center;
     .logo{
       img{
-        width: 75%;
+        max-width: 78px;
       }
     }
 
     .nav-bar{
-      display: flex;
+      display: flex; 
       font-size: 14px;
       column-gap: 10px;
       height: 100px;

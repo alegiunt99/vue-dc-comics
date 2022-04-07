@@ -1,8 +1,13 @@
 <template>
   <main class="main-page">
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+    </div>
+
+    <!-- Parte centrale con le card de i fumetti -->
     <div class="container">
       <section id="central-section">
-        <h3>--> Content goes here </h3>
+        
       </section>
     </div>
   </main>
@@ -11,9 +16,7 @@
 <script>
 export default {
   name: 'MainApp',
-  props: {
-    msg: String
-  }
+  
 }
 </script>
 
@@ -21,9 +24,11 @@ export default {
 <style scoped lang="scss">
 
 .main-page{
-  padding: 40px 0px;
-  color: white;
-  background-color: rgb(28 28 28);
+  .jumbotron{
+    height: 280px;
+    background-image: url('@/assets/jumbotron.jpg');
+    background-size: cover;
+  }
 }
 
 </style>

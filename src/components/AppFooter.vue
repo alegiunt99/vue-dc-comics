@@ -151,9 +151,6 @@
 <script>
 export default {
   name: 'FooterApp',
-  props: {
-    msg: String
-  }
 }
 </script>
 
