@@ -12,14 +12,14 @@ import MainApp from './components/AppMain.vue';
 import FooterApp from './components/AppFooter.vue';
 
 // data
-import ComicsPhotos from '@/assets/data/dc-comics'
-
+import ComicsPhotos from '@/assets/data/dc-comics.json'
+console.log(ComicsPhotos)
 export default {
   name: 'App',
 
   data(){
 
-    return ComicsPhotos
+    return { ComicsPhotos }
   },
 
   components: {

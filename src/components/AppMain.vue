@@ -6,21 +6,26 @@
 
     <!-- Parte centrale con le card de i fumetti -->
     <div class="container">
-      <section id="central-section">
-        
-      </section>
+      <Card v-for="(item, index) in ComicsPhotos" :key="index" :card="item"/>
     </div>
   </main>
 </template>
 
 <script>
+
+import Card from '@/components/CardLayout.vue'
+
 export default {
   name: 'MainApp',
 
   props: {
     ComicsPhotos: Array,
+  },
+
+  components:{
+    Card
   }
-  
+
 }
 </script>
 
