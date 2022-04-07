@@ -166,7 +166,7 @@ export default {
   }
 
   #top-footer{
-    background-color: #0282f9;
+    background-color: rgb(2, 130, 249);
     .container{
       display: flex;
       font-size: 11px;
@@ -184,7 +184,6 @@ export default {
           justify-content: center;
           img{
           max-width: 50px;
-       
         }
       }
       
@@ -241,7 +240,7 @@ export default {
       .subsribe-button{
         button{
           background-color: transparent;
-          border: 1px solid #0282f9;
+          border: 2px solid #0282f9;
           font-size: 14px;
           padding: 10px;
           color: white;
@@ -266,6 +265,10 @@ export default {
           .social-button{
             img{
               width: 85%;
+              &:hover{
+                cursor: pointer;
+                width: 90%;
+              }
             }
           }
         }

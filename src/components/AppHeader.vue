@@ -43,7 +43,6 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
     .logo{
       img{
         width: 75%;
@@ -54,6 +53,15 @@ export default {
       display: flex;
       font-size: 14px;
       column-gap: 10px;
+      height: 100px;
+      line-height: 100px;
+      .nav-link{
+        &:hover{
+          border-bottom: 3px solid rgb(2, 130, 249);
+          color: rgb(2, 130, 249);
+          cursor: pointer;
+        }
+      }
     }
   }
 
