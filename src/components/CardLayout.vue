@@ -3,7 +3,6 @@
       <img :src="card.thumb">
       <h5>{{card.series}}</h5>
       <p>{{card.price}}</p>
-      <span>{{card.type}}</span>
 
   </div>
 </template>
@@ -31,12 +30,16 @@ export default {
 
         img{
             width: 85%;
+            &:hover{
+                filter: brightness(1.3);
+                cursor: pointer;
+            }
         }
 
-        p,
-        span{
+        p{
             font-size: 15px;
             color: gray;
+            font-weight: 600;
         }
     }
 </style>

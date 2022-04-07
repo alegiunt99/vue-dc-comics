@@ -9,6 +9,11 @@
       <div class="container">
         <Card v-for="(item, index) in ComicsPhotos" :key="index" :card="item"/>
       </div>
+      <div id="load-more">
+        <button>
+          LOAD MORE
+        </button>
+      </div>
     </div>
     
   </main>
@@ -49,6 +54,21 @@ export default {
     flex-wrap: wrap;
     column-gap: 5px;
     row-gap: 20px;
+  }
+
+  #load-more{
+    text-align: center;
+    button{
+      background-color: #0282f9;
+      font-size: 14px;
+      padding: 10px;
+      color: white;
+      border: none;
+      &:hover{
+        background-color: rgb(104, 104, 104);
+        cursor: pointer;
+      }
+    }
   }
   }
   
