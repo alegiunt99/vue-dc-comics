@@ -5,9 +5,12 @@
     </div>
 
     <!-- Parte centrale con le card de i fumetti -->
-    <div class="container">
-      <Card v-for="(item, index) in ComicsPhotos" :key="index" :card="item"/>
+    <div class="central-page">
+      <div class="container">
+        <Card v-for="(item, index) in ComicsPhotos" :key="index" :card="item"/>
+      </div>
     </div>
+    
   </main>
 </template>
 
@@ -38,6 +41,18 @@ export default {
     background-image: url('@/assets/jumbotron.jpg');
     background-size: cover;
   }
+  .central-page{
+    background-color: rgb(46, 46, 46);
+    padding: 50px 0px;
+    .container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 20px;
+  }
+  }
+  
+  
 }
 
 </style>
